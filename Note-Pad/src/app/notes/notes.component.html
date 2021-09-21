@@ -1,0 +1,17 @@
+
+<h2>My Notes</h2>
+<div>
+   <textarea name="comment" id="new-note" cols="30" rows="5" #noteName></textarea>
+     <button class="add-button" (click)="add(noteName.value); noteName.value=''">
+    Add note
+  </button>
+</div>
+<ul class="notes">
+  <li *ngFor="let note of notes">
+    <a routerLink="/detail/{{note.id}}">
+      <span class="badge">{{note.id}}</span> {{note.name}}
+    </a>
+    <button class="delete" title="delete note"
+      (click)="delete(note)">x</button>
+  </li>
+</ul>

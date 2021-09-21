@@ -1,0 +1,14 @@
+
+     <div *ngIf="note">
+        <h2>{{note.name | uppercase}} </h2>
+        <div><span>id: </span>{{note.id}}</div>
+        <div>
+          <label for="note-name">Edit Note: </label>
+          <textarea name="comment" id="note-name" cols="30" rows="5" [(ngModel)]="note.name" placeholder="Note name"></textarea>
+    
+        </div>
+        <button (click)="goBack()">go back</button>
+        <button (click)="save()">save</button>
+      </div>
+
+      
