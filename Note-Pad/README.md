@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.3.
 
+Use the following command to create a new workspace via CMD: ng new Note-Pad
+
 Install the In-memory Web API package from npm with the following command: npm install angular-in-memory-web-api --save
 
 ## Development server
